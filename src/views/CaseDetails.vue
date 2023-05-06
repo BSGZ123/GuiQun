@@ -3,10 +3,10 @@
     <banner img="../assets/img/bgtop.jpg" />
     <div class="case-product">
       <div class="case-product-content">
-        <img v-lazy="imgserver+caseIdList.Img" alt />
-        <p class="product-title">{{caseIdList.Title}}</p>
-        <p class="product-time">{{caseIdList.CreateTime}}</p>
-        <p class="product-content">{{caseIdList.Content}}</p>
+        <img v-lazy="caseIdList.img" alt />
+        <p class="product-title">{{caseIdList.title}}</p>
+        <p class="product-time">{{caseIdList.createTime}}</p>
+        <p class="product-content">{{caseIdList.content}}</p>
       </div>
     </div>
   </div>
@@ -15,6 +15,7 @@
 <script>
 import Banner from "../components/Banner";
 export default {
+  name: "CaseDetails",
   components: {
     Banner
   },
@@ -34,10 +35,10 @@ export default {
   methods: {
     loadData() {
       this.$http
-        .get(`Cases/GetCasesById/${this.pid}`)
+        .get(`api/Case/${this.pid}`)
         .then(response => {
           //console.log(response);
-          this.caseIdList = response.data;
+          this.caseIdList = response.data.result;
           window.console.log(this.caseIdList);
         })
         .catch(function(error) {
