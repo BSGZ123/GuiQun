@@ -32,7 +32,7 @@
                 :to="{ name: 'newsdetails', params: { id: item.id }}"
               >
                 <img src="../assets/img/sanjiao.png" />
-                <span>more</span>
+                <span>MORE</span>
               </router-link>
             </div>
           </div>
@@ -102,7 +102,7 @@ export default {
 
     &-content {
       width: 1240px;
-      //height: 1600px;
+      height: 800px;
       margin: 0 auto;
       background-color: #fff;
       border: 1px solid red;

@@ -63,12 +63,19 @@
         </div>
       </swiper-slide>
     </swiper>
-    <div style="position:absolute;text-align:center;bottom:0;margin:0 auto;width:100%;color: #595962">
-      <a target="_blank" style="color: #595962" href="https://beian.miit.gov.cn">苏ICP备2022020445号-1</a>&nbsp;
+    <div class="icp">
+      <a target="_blank"  href="https://beian.miit.gov.cn">苏ICP备2022020445号-1</a>&nbsp;
       @2015-2023 盐城桂君智能化工程有限公司
     </div>
+<!--    <router-view />-->
+<!--    &lt;!&ndash; 配置备案号 &ndash;&gt;-->
+<!--    <Copyright></Copyright>-->
   </div>
 </template>
+
+<!--<script setup>-->
+<!--import Copyright from '@/components/CopyRightICP.vue';-->
+<!--</script>-->
 
 <script>
 import { Swiper, SwiperSlide, directive } from 'vue-awesome-swiper'
@@ -151,6 +158,25 @@ export default {
 /* .el-header {
   position: absolute;
 } */
+
+.icp {
+  padding: 10px 0;
+  width: 100%;
+  height: 16px;
+  text-align: center;
+  color: gray;
+  z-index: 1000;
+}
+.icp > a {
+  color: gray;
+  text-decoration: none;
+}
+.icp > a:hover {
+  color: aqua;
+  text-decoration: none;
+}
+
+
 .swiper-slide {
   font-size: 24px;
   // text-align: center;
@@ -293,7 +319,7 @@ export default {
         width: 20px;
         height: 20px;
         border-radius: 50%;
-        padding: 0px;
+        padding: 0;
         color: #fff;
       }
     }

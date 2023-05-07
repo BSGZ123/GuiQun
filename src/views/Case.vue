@@ -11,9 +11,9 @@
             <div class="more">
               <router-link
                 class="text-decoration"
-                :to="{ name: 'casedetails', params: { id: cas.Id }}"
+                :to="{ name: 'casedetails', params: { id: cas.id }}"
               >
-                <span>more</span>
+                <span>MORE</span>
                 <img src="../assets/img/sanjiao.png" />
               </router-link>
             </div>
@@ -74,7 +74,7 @@ export default {
         display: flex;
         justify-content: center;
         align-items: center;
-        border: 1px solid pink;
+        border: 0px solid pink;
 
         img {
           width: 612px;
@@ -90,6 +90,7 @@ export default {
           .abstract-title {
             line-height: 30px;
             font-size: 22px;
+            font-weight: bold;
             color: #e13834;
           }
           .abstract-content {

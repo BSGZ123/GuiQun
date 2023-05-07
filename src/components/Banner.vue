@@ -29,7 +29,7 @@ export default {
 <style lang="scss" scoped>
 .banner {
   width: 100%;
-  height: 300px;
+  height: 350px;
   display: flex;
   position: relative;
   overflow: hidden;
