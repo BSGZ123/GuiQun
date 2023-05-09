@@ -194,7 +194,7 @@ export default {
 .go-in {
   width: 100%;
   height: 100%;
-  background-color: #14679f;
+  background-color: #1a82cc;
   position: relative;
   overflow: hidden;
   .section {

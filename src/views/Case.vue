@@ -58,7 +58,7 @@ export default {
   height: 100%;
   position: relative;
   overflow: hidden;
-  background-color: #14679f;
+  background-color: #1a82cc;
 
   &-section {
     width: 100%;

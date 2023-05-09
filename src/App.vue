@@ -120,7 +120,7 @@ body {
   width: 100%;
   height: 216px;
   overflow: hidden;
-  background-color: #14679f;
+  background-color: #1a82cc;
   &-content {
     width: 1240px;
     margin: 0 auto;
