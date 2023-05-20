@@ -59,7 +59,7 @@ export default {
         if (valid) {
           this.$http
             .post(
-              `api/Account/Login`,{loginName:this.loginform.name,password:this.loginform.pass}
+              "api/Account/Login",{loginName:this.loginform.name,password:this.loginform.pass}
             )
             .then(response => {
               window.console.log(response);
